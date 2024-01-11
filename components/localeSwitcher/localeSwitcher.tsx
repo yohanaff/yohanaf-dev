@@ -10,7 +10,7 @@ import styles from './localeSwitcher.module.css';
 
 import { i18n } from '@/i18.config';
 
-export default function LocaleSwitcher() {
+function LocaleSwitcher() {
     const pathName = usePathname();
 
     const currentLocale = pathName.split('/')[1] || i18n.defaultLocale;
@@ -66,3 +66,5 @@ export default function LocaleSwitcher() {
         </ul>
     );
 }
+
+export default LocaleSwitcher;

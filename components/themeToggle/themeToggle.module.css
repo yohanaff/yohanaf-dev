@@ -1,0 +1,182 @@
+.theme {
+    display: flex;
+    align-self: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.themeIcon {
+    pointer-events: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.themeIcon,
+.themeToggle {
+    z-index: 1;
+}
+
+.themeIcon,
+.themeIconPart {
+    position: absolute;
+}
+
+.themeIcon {
+    display: block;
+    margin-top: -2em;
+    margin-left: 1em;
+    width: .5em;
+    height: 1.5em;
+}
+
+.themeIconPart {
+    border-radius: 50%;
+    box-shadow: 0.4em -0.4em 0 0.5em #fefefc inset;
+    top: calc(50% - .5em);
+    left: calc(50% - .5em);
+    width: 1em;
+    height: 1em;
+    transition: box-shadow 0.2s ease-in-out,
+        opacity 0.2s ease-in-out,
+        transform 0.2s ease-in-out;
+    transform: scale(0.5);
+}
+
+.themeIconPart~.themeIconPart {
+    background-color: #fefefc;
+    border-radius: .05em;
+    box-shadow: none;
+    top: 50%;
+    left: calc(50% - 0.05em);
+    transform: rotate(0) translateY(0.5em);
+    transform-origin: 50% 0;
+    width: 0.1em;
+    height: 0.2em;
+}
+
+.themeIconPart:nth-child(3) {
+    transform: rotate(45deg) translateY(0.5em);
+}
+
+.themeIconPart:nth-child(4) {
+    transform: rotate(90deg) translateY(0.5em);
+}
+
+.themeIconPart:nth-child(5) {
+    transform: rotate(135deg) translateY(0.5em);
+}
+
+.themeIconPart:nth-child(6) {
+    transform: rotate(180deg) translateY(0.5em);
+}
+
+.themeIconPart:nth-child(7) {
+    transform: rotate(225deg) translateY(0.5em);
+}
+
+.themeIconPart:nth-child(8) {
+    transform: rotate(270deg) translateY(0.5em);
+}
+
+.themeIconPart:nth-child(9) {
+    transform: rotate(315deg) translateY(0.5em);
+}
+
+.themeLabel,
+.themeToggle,
+.themeWrap {
+    position: relative;
+}
+
+.themeToggle,
+.themeToggle::before {
+    display: block;
+}
+
+.themeToggle {
+    background-color: #fefefc;
+    border-radius: 25% / 50%;
+    box-shadow: 0 0 0 0.125em #161616;
+    padding: 0.25em;
+    width: 6em;
+    height: 3em;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out,
+        box-shadow 0.15s ease-in-out,
+        transform 0.2s ease-in-out;
+}
+
+.themeToggle::before {
+    background-color: rgb(187, 187, 187);
+    border-radius: 50%;
+    content: '';
+    width: 2.5em;
+    height: 2.5em;
+    transition: background-color 0.3s ease-in-out,
+        transform 0.3s ease-in-out;
+}
+
+.themeToggle:focus {
+    box-shadow: 0 0 0 .125em #161616;
+    outline: transparent;
+}
+
+.themeToggle:checked {
+    background-color: #444444;
+}
+
+.themeToggle:checked::before,
+.themeToggle:checked~.themeIcon {
+    transform: translateX(3em);
+}
+
+.themeToggle:checked::before {
+    background-color: #d0d0d0;
+}
+
+/* moon */
+.themeToggle:checked~.themeIcon .themeIconPart:nth-child(1) {
+    box-shadow: 0.2em -0.2em 0 0.2em #444444 inset;
+    transform: scale(1);
+    left: -0.7em;
+}
+
+.themeToggle:checked~.themeIcon .themeIconPart~.themeIconPart {
+    opacity: 0;
+}
+
+.themeToggle:checked~.themeIcon .themeIconPart:nth-child(2) {
+    transform: rotate(45deg) translateY(0.8em);
+}
+
+.themeToggle:checked~.themeIcon .themeIconPart:nth-child(3) {
+    transform: rotate(90deg) translateY(0.8em);
+}
+
+.themeToggle:checked~.themeIcon .themeIconPart:nth-child(4) {
+    transform: rotate(135deg) translateY(0.8em);
+}
+
+.themeToggle:checked~.themeIcon .themeIconPart:nth-child(5) {
+    transform: rotate(180deg) translateY(0.8em);
+}
+
+.themeToggle:checked~.themeIcon .themeIconPart:nth-child(6) {
+    transform: rotate(225deg) translateY(0.8em);
+}
+
+.themeToggle:checked~.themeIcon .themeIconPart:nth-child(7) {
+    transform: rotate(270deg) translateY(0.8em);
+}
+
+.themeToggle:checked~.themeIcon .themeIconPart:nth-child(8) {
+    transform: rotate(315deg) translateY(0.8em);
+}
+
+.themeToggle:checked~.themeIcon .themeIconPart:nth-child(9) {
+    transform: rotate(360deg) translateY(0.8em);
+}
+
+.themeToggleWrap {
+    margin: 0 0.75em;
+}
