@@ -56,7 +56,7 @@
 @keyframes blink {
 
     0% {
-        border-color: black;
+        border-color: var(--blink-color);
     }
 
     50% {

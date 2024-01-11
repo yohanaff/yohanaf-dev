@@ -1,17 +1,20 @@
 .container {
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-text-color);
+}
+
+.container {
     position: fixed;
     height: 5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #161616;
     inset: 0;
     text-align: right;
     padding: 0 1em;
 }
 
 .container .logo {
-    color: #f8f9fa;
     font-size: 1.5rem;
     font-weight: 700;
     margin-left: 1em;
@@ -31,7 +34,6 @@
 
 .container .menuLinks li {
     position: relative;
-    color: #f8f9fa;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,5 +61,5 @@
 }
 
 .container .menuLinks li a {
-    color: #f8f9fa;
+    color: inherit;
 }

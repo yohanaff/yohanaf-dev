@@ -22,12 +22,15 @@ export default function RootLayout({
   children: React.ReactNode
   params: { lang: Locale }
 }) {
+
+  const theme = 'dark'
+
   return (
-    <html lang="en">
+    <html lang="en" className={theme === 'dark' ? 'dark-theme' : ''}>
       <body>
         <Navbar lang={params.lang} />
         <main>{children}</main>
       </body>
-    </html>
+    </html >
   )
 }

@@ -13,10 +13,24 @@
   text-decoration: none;
 }
 
-body {
+body.light {
   background-color: #f8f9fa;
   padding: 2em;
-  color: #000000;
+  color: #161616;
+  --navbar-bg-color: #b9b9b9;
+  --navbar-text-color: #161616;
+}
+
+body.dark {
+  background-color: #161616;
+  padding: 2em;
+  color: #fefefc;
+  --navbar-bg-color: #070707;
+  --navbar-text-color: #b9b9b9;
+}
+
+body.dark h2 {
+  color: #b9b9b9;
 }
 
 h1 {
