@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .1rem;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f8f9fa;
+  padding: 2em;
+  color: #000000;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  margin: 0;
+  padding: 0;
+}

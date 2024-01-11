@@ -1,0 +1,15 @@
+{
+    "navigation": {
+        "home": "Home",
+        "about": "About"
+    },
+    "page": {
+        "home": {
+            "description": "Full-Stack Developer"
+        },
+        "about": {
+            "title": "About Us",
+            "description": "This is the about page"
+        }
+    }
+}

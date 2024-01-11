@@ -1,0 +1,15 @@
+{
+    "navigation": {
+        "home": "Inicio",
+        "about": "Sobre"
+    },
+    "page": {
+        "home": {
+            "description": "Desarrolladora Full-Stack"
+        },
+        "about": {
+            "title": "Über uns",
+            "description": "Dies ist die About-Seite"
+        }
+    }
+}
