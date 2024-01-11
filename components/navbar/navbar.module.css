@@ -1,0 +1,59 @@
+.container {
+    position: fixed;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #161616;
+    inset: 0;
+    text-align: right;
+    padding: 0 1em;
+}
+
+.container .logo {
+    color: #f8f9fa;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.container .menuLinks {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 8px;
+    list-style: none;
+}
+
+.container .menuLinks li {
+    position: relative;
+    color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 2em;
+    font-size: 1.5em;
+}
+
+.container .menuLinks li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #fefefc;
+    position: absolute;
+    bottom: -5px;
+    /* Adjust as needed */
+    left: 0;
+    transition: width 0.5s;
+    display: block;
+}
+
+.container .menuLinks li:hover::after {
+    width: 100%;
+}
+
+.container .menuLinks li a {
+    color: #f8f9fa;
+}

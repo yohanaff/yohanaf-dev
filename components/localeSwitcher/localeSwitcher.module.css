@@ -1,0 +1,12 @@
+.localeSwitcher {
+    display: flex;
+    align-items: center;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.localeSwitcher li {
+    margin-right: 0.5rem;
+}

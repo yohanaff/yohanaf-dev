@@ -1,0 +1,85 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+    margin-top: 6em;
+}
+
+.heroText {
+    flex: 1;
+    padding-right: 1em;
+}
+
+.heroImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.typewriter {
+    display: inline-block;
+    margin-right: 3em;
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .15em solid;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(30, end),
+        blink .75s step-end 0s infinite,
+        end 0s 6s forwards;
+}
+
+.textContainer {
+    text-align: center;
+}
+
+.textContainer h2 {
+    color: #535353;
+    animation: fadeIn 6s ease-in-out;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+
+    0% {
+        border-color: black;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes end {
+    from {
+        border-right: .15em solid;
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
