@@ -1,14 +1,11 @@
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css');
+
 .hero {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 2em;
     margin-top: 6em;
-}
-
-.heroText {
-    flex: 1;
-    padding-right: 1em;
 }
 
 .heroImage {
@@ -43,6 +40,41 @@
     animation: fadeIn 6s ease-in-out;
 }
 
+.techStack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    animation: fadeIn 6s ease-in-out;
+    margin: 0 auto;
+    padding-right: 22em;
+    margin-top: -100px;
+}
+
+.techStack div {
+    margin-bottom: 2em;
+    border: 1px solid #535353;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.techStack h3 {
+    font-size: 1.5em;
+    margin-bottom: .7em;
+    text-align: center;
+}
+
+.techStack i {
+    color: var(--devicon-color);
+    margin-right: .2em;
+}
+
+.devIcon {
+    font-size: 7em;
+}
+
 @keyframes typing {
     from {
         width: 0;
@@ -56,7 +88,7 @@
 @keyframes blink {
 
     0% {
-        border-color: black;
+        border-color: var(--blink-color);
     }
 
     50% {
@@ -81,5 +113,49 @@
 
     to {
         opacity: 1;
+    }
+}
+
+@media (max-width: 980px) {
+    .hero {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .typewriter {
+        margin: 0 0 2em 0;
+    }
+
+    .textContainer h1 {
+        font-size: 1.3em;
+    }
+
+    .textContainer h2 {
+        font-size: 1.2em;
+    }
+
+    .techStack {
+        padding-right: 0;
+        margin-top: 0;
+    }
+
+    .techStack div {
+        margin-bottom: 2em;
+        border-radius: 5px;
+        padding: 1em;
+    }
+
+    .techStack h3 {
+        font-size: 1.5em;
+        margin-bottom: .7em;
+        text-align: center;
+    }
+
+    .techStack i {
+        display: flex;
+        flex-direction: column;
+        margin-right: .2em;
+        text-align: center;
+        margin-top: 1em;
     }
 }

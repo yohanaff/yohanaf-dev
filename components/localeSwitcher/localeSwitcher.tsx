@@ -12,8 +12,8 @@ import { i18n } from '@/i18.config';
 
 function LocaleSwitcher() {
     const pathName = usePathname();
-
-    const currentLocale = pathName.split('/')[1] || i18n.defaultLocale;
+    const isLocaleInPath = i18n.locales.some(locale => pathName.startsWith(`/${locale}`));
+    const currentLocale = isLocaleInPath ? pathName.split('/')[1] : i18n.defaultLocale;
 
     const redirectedPathName = (locale: string) => {
         if (!pathName) return '/';

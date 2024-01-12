@@ -14,20 +14,43 @@ export default async function Home({
   return (
     <main>
       <section className={styles.hero}>
-        <div className={styles.textContainer}>
-          <div className={styles.typewriter}>
-            <h1>Yohana Fernandes</h1>
-            <h2>{page.home.description}</h2>
+        <div className={styles.heroContainer}>
+          <div className={styles.textContainer}>
+            <div className={styles.typewriter}>
+              <h1>Yohana Fernandes</h1>
+            </div>
+          </div>
+          <div className={styles.textContainer}>
+            <div className={styles.typewriter}>
+              <h2>{page.home.description}</h2>
+            </div>
           </div>
         </div>
         <Image
           className={styles.heroImage}
-          src="/yohana-fernandes-software-engineer-developer.jpg"
-          alt="Yohana Fernandes"
+          src='/yohana-fernandes-software-engineer-developer.jpg'
+          alt='Yohana Fernandes Software Engineer Developer'
           width={300}
           height={300}
           priority={true}
         />
+      </section>
+      <section className={styles.techStack}>
+        <div>
+          <h3>// Back-End</h3>
+          <i className={`devicon-java-plain-wordmark ${styles.devIcon}`}></i>
+          <i className={`devicon-spring-plain-wordmark ${styles.devIcon}`}></i>
+          <i className={`devicon-apachekafka-original-wordmark ${styles.devIcon}`}></i>
+        </div>
+        <div>
+          <h3>// Front-End</h3>
+          <i className={`devicon-react-original-wordmark ${styles.devIcon}`}></i>
+          <i className={`devicon-nextjs-original-wordmark ${styles.devIcon}`}></i>
+          <i className={`devicon-typescript-plain ${styles.devIcon}`}></i>
+          <i className={`devicon-javascript-plain ${styles.devIcon}`}></i>
+          <i className={`devicon-html5-plain-wordmark ${styles.devIcon}`}></i>
+          <i className={`devicon-css3-plain-wordmark ${styles.devIcon}`}></i>
+        </div>
       </section>
     </main >
   );

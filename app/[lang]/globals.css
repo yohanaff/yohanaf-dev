@@ -13,10 +13,53 @@
   text-decoration: none;
 }
 
-body {
+body.light {
   background-color: #f8f9fa;
   padding: 2em;
-  color: #000000;
+  color: #161616;
+  --navbar-bg-color: #b9b9b9;
+  --navbar-text-color: #161616;
+  --blink-color: #f8f9fa;
+  --devicon-color: #161616;
+  --scrollbar-thumb-color: #ababab;
+  --scrollbar-thumb-hover-color: #dfdfdf;
+  --scrollbar-track-color: #eeeeee;
+  --social-link-color: #161616;
+}
+
+body.dark {
+  background-color: #161616;
+  padding: 2em;
+  color: #fefefc;
+  --navbar-bg-color: #070707;
+  --navbar-text-color: #b9b9b9;
+  --blink-color: #fefefc;
+  --devicon-color: #b9b9b9;
+  --scrollbar-thumb-color: #767676;
+  --scrollbar-thumb-hover-color: #444444;
+  --scrollbar-track-color: #010101;
+  --social-link-color: #fefefc;
+}
+
+body.dark h2 {
+  color: #b9b9b9;
+}
+
+::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover-color);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
 }
 
 h1 {
@@ -36,4 +79,18 @@ h2 {
   letter-spacing: .1rem;
   margin: 0;
   padding: 0;
+}
+
+h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+@media (max-width: 980px) {
+  main {
+    max-width: 100%;
+  }
+}
+
+.techStack {
+  max-width: fit-content;
 }

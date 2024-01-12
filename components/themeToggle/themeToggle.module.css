@@ -94,7 +94,6 @@
 .themeToggle {
     background-color: #fefefc;
     border-radius: 25% / 50%;
-    box-shadow: 0 0 0 0.125em #161616;
     padding: 0.25em;
     width: 6em;
     height: 3em;
@@ -117,7 +116,6 @@
 }
 
 .themeToggle:focus {
-    box-shadow: 0 0 0 .125em #161616;
     outline: transparent;
 }
 
