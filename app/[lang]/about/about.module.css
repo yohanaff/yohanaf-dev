@@ -1,0 +1,44 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6em auto 2em auto;
+    max-width: 80%;
+}
+
+.aboutContainer h3 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    border: 1px solid #535353;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.aboutContainer h2 {
+    margin-top: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    border: 1px solid #535353;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.aboutContainer p {
+    margin-top: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+.socialLinks {
+    margin-top: 20px;
+}
+
+.socialLinks a {
+    margin-right: 10px;
+    color: var(--social-link-color);
+    font-size: 24px;
+}

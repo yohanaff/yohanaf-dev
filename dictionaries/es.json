@@ -8,8 +8,24 @@
             "description": "Desarrolladora Full-Stack"
         },
         "about": {
-            "title": "Über uns",
-            "description": "Dies ist die About-Seite"
+            "title": "Sobre mí",
+            "subTitle": "🤖 Desarrolladora Fullstack | Back-End | Especialista en Java & Spring Boot | JavaScript | Microservicios | Experiencia Multicultural en TI | Entusiasta de Tecnologías Emergentes",
+            "description": "Desde 2021, he estado en un emocionante viaje en el mundo de la tecnología de la información, especializándome en desarrollo back-end con un enfoque fuerte en Java y Spring Boot. Mi trayectoria profesional está marcada por experiencias significativas en sectores desafiantes, como el bancario/financiero, donde tuve la oportunidad de trabajar con clientes de alto calibre y en equipos diversos, extendiéndome por culturas y fronteras, incluyendo Chile y España.",
+            "whatIDo": "💻 Lo Que Hago:",
+            "whatIDoDescription": [
+                "- Desarrollo y mantenimiento de APIs REST, microservicios y batches.",
+                "- Implementación de proyectos utilizando metodologías ágiles como Scrum y Kanban.",
+                "- Creación de soluciones eficientes utilizando Docker, Git, SQL, JUnit, Kafka, Splunk, AWS y Azure.",
+                "- Desarrollo de interfaces web responsivas y amigables para el usuario con HTML, CSS, JavaScript y TypeScript.",
+                "- Desarrollo de interfaces web interactivas y dinámicas con React."
+            ],
+            "languageSkillsTitle": "🌐 Habilidades Lingüísticas:",
+            "languageSkillsDescription": [
+                "- 🇧🇷 Portugués: Nativvo",
+                "- 🇺🇸 Inglés: Competente",
+                "- 🇪🇸 Español: Básico",
+                "- 🇨🇳 Mandarín: Básico"
+            ]
         }
     }
 }

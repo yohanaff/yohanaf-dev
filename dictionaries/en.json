@@ -8,8 +8,24 @@
             "description": "Full-Stack Developer"
         },
         "about": {
-            "title": "About Us",
-            "description": "This is the about page"
+            "title": "About me",
+            "subTitle": "🤖 Fullstack Developer | Back-end | Java & Spring Boot Specialist | JavaScript | Microservices | Multicultural IT Experience | Emerging Tech Enthusiast",
+            "description": "Since 2021, I have been on an exciting journey in the world of information technology, specializing in back-end development with a strong focus on Java and Spring Boot. My professional journey is marked by significant experiences in challenging sectors, such as banking/finance, where I had the opportunity to work with high-caliber clients and in diverse teams, extending across cultures and borders, including Chile and Spain.",
+            "whatIDo": "💻 What I Do:",
+            "whatIDoDescription": [
+                "- Development and maintenance of REST APIs, microservices, and batches.",
+                "- Implementation of projects using agile methodologies like Scrum and Kanban.",
+                "- Creation of efficient solutions using Docker, Git, SQL, JUnit, Kafka, Splunk, AWS, and Azure.",
+                "- Development of responsive and user-friendly web interfaces with HTML, CSS, JavaScript, and TypeScript.",
+                "- Development of interactive and dynamic web interfaces with React."
+            ],
+            "languageSkillsTitle": "🌐 Language Skills:",
+            "languageSkillsDescription": [
+                "- 🇧🇷 Portuguese: Native",
+                "- 🇺🇸 English: Proficiente",
+                "- 🇪🇸 Spanish: Basic",
+                "- 🇨🇳 Mandarin: Basic"
+            ]
         }
     }
 }
