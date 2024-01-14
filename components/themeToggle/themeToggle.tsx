@@ -7,9 +7,12 @@ function ThemeToggle() {
     const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
     useEffect(() => {
-        const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' || 'light';
-        setTheme(savedTheme);
-        document.body.className = savedTheme;
+        const savedTheme = localStorage.getItem('theme') as 'light' | 'dark';
+        const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        const defaultTheme = savedTheme || (prefersDarkMode ? 'dark' : 'light');
+        setTheme(defaultTheme);
+        document.body.className = defaultTheme;
     }, []);
 
     const toggleTheme = () => {
