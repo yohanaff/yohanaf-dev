@@ -9,6 +9,15 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Yohana Fernandes | Software Engineer',
   description: 'Yohana Fernandes is a Software Engineer based in Brazil. She is passionate about technology and loves to learn new things.',
+  openGraph: {
+    images: [
+      {
+        url: 'yohana-fernandes-software-engineer-developer.jpg',
+        height: 300,
+        alt: 'Yohana Fernandes Software Engineer'
+      }
+    ]
+  }
 }
 
 export async function generateStaticParams() {
