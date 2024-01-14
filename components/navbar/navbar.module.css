@@ -84,6 +84,10 @@
     display: none;
 }
 
+.navbarLeftSide span {
+    color: var(--navbar-text-color);
+}
+
 @media (max-width: 980px) {
     .navbar {
         max-width: 100%;
