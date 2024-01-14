@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: 'yohana-fernandes-software-engineer-developer.jpg',
+        url: 'https://i.pinimg.com/originals/41/ff/08/41ff08e482a4314896060bebbe40c46e.jpg',
         width: 300,
         height: 300,
         alt: 'Yohana Fernandes Software Engineer'

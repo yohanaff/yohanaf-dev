@@ -12,7 +12,9 @@ async function Navbar({ lang }: { lang: Locale }) {
     return (
         <nav className={styles.navbar}>
             <div className={styles.navbarLeftSide}>
-                <span>{'</>'}</span>
+                <CustomLink href="/" lang={lang}>
+                    <span className={styles.logo}>{'</>'}</span>
+                </CustomLink>
                 <div className={styles.localeSwitcher}>
                     <LocaleSwitcher />
                 </div>
