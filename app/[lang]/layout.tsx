@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'yohana-fernandes-software-engineer-developer.jpg',
+        width: 300,
         height: 300,
         alt: 'Yohana Fernandes Software Engineer'
       }
