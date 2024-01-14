@@ -2,6 +2,7 @@ import { Locale } from '@/i18.config';
 import { getDictionary } from '@/lib/dictionary';
 import Image from 'next/image';
 import styles from './page.module.css';
+import yohanaFernandes from '@/public/yohana-fernandes-software-engineer-developer.jpg';
 
 export default async function Home({
   params: { lang }
@@ -28,11 +29,10 @@ export default async function Home({
         </div>
         <Image
           className={styles.heroImage}
-          src='/yohana-fernandes-software-engineer-developer.jpg'
+          src={yohanaFernandes}
           alt='Yohana Fernandes Software Engineer Developer'
           width={300}
           height={300}
-          priority={true}
         />
       </section>
       <section className={styles.techStack}>
