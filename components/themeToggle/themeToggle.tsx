@@ -4,27 +4,20 @@ import React, { useState, useEffect } from 'react';
 import styles from './themeToggle.module.css';
 
 function ThemeToggle() {
-    const [theme, setTheme] = useState<'light' | 'dark' | undefined>(undefined);
+    const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
     useEffect(() => {
-        const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        setTheme(prefersDarkMode ? 'dark' : 'light');
+        const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' || 'light';
+        setTheme(savedTheme);
+        document.body.className = savedTheme;
     }, []);
 
-    useEffect(() => {
-        if (theme) {
-            document.body.className = theme;
-        }
-    }, [theme]);
-
     const toggleTheme = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
+        const newTheme = theme === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+        document.body.className = newTheme;
     };
-
-    if (theme === undefined) {
-        return null;
-    }
 
     return (
         <label className={styles.theme}>

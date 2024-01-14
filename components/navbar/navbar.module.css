@@ -109,7 +109,7 @@
     }
 
     .navbarLinksContainer {
-        background-color: var(--navbar-bg-color);
+        background-color: var(--navbar-mobile-bg-color);
         position: fixed;
         width: 40%;
         height: 100%;
