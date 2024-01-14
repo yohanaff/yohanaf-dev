@@ -25,6 +25,7 @@ body.light {
   --scrollbar-thumb-hover-color: #dfdfdf;
   --scrollbar-track-color: #eeeeee;
   --social-link-color: #161616;
+  --navbar-mobile-bg-color: #e5e5e5;
 }
 
 body.dark {
@@ -39,6 +40,7 @@ body.dark {
   --scrollbar-thumb-hover-color: #444444;
   --scrollbar-track-color: #010101;
   --social-link-color: #fefefc;
+  --navbar-mobile-bg-color: #101010;
 }
 
 body.dark h2 {
