@@ -6,8 +6,7 @@ backend:
         - nvm install 20
         - nvm use 20
         - npm ci
-        - amplifyPush --simple
-        - mv ./amplify/\#current-cloud-backend/backend-config.json ./
+        - npx amplify pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
 frontend:
   phases:
     preBuild:
