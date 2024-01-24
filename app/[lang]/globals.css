@@ -18,7 +18,7 @@ body.light {
   padding: 2em;
   color: #161616;
   --navbar-bg-color: #b9b9b9;
-  --navbar-text-color: #161616;
+  --second-text-color: #161616;
   --blink-color: #161616;
   --devicon-color: #161616;
   --scrollbar-thumb-color: #ababab;
@@ -26,6 +26,8 @@ body.light {
   --scrollbar-track-color: #eeeeee;
   --social-link-color: #161616;
   --navbar-mobile-bg-color: #e5e5e5;
+  --card-bg-color: #fefefc;
+  --card-border-color: #ababab;
 }
 
 body.dark {
@@ -33,7 +35,7 @@ body.dark {
   padding: 2em;
   color: #fefefc;
   --navbar-bg-color: #070707;
-  --navbar-text-color: #b9b9b9;
+  --second-text-color: #b9b9b9;
   --blink-color: #fefefc;
   --devicon-color: #b9b9b9;
   --scrollbar-thumb-color: #767676;
@@ -41,6 +43,8 @@ body.dark {
   --scrollbar-track-color: #010101;
   --social-link-color: #fefefc;
   --navbar-mobile-bg-color: #101010;
+  --card-bg-color: #1c1c1c;
+  --card-border-color: #767676;
 }
 
 body.dark h2 {
