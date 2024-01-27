@@ -1,6 +1,5 @@
 .article {
     margin: 6em auto;
-    font-family: 'Roboto', sans-serif;
     max-width: 90vh;
     padding: 4em 4em;
     background-color: var(--card-bg-color);
@@ -8,10 +7,9 @@
     box-shadow: 0 0 1px #ccc;
 }
 
-.article h1 {
-    font-family: 'Roboto', sans-serif;
-}
-
-.article h2 {
-    font-family: 'Roboto', sans-serif;
+.createdAt {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--primary-text-color);
 }

@@ -1,32 +1,44 @@
-import type { Schema } from '@/amplify/data/resource';
-import { generateClient } from 'aws-amplify/data';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import Markdown from 'react-markdown';
+import fetchMarkdownFromS3 from '@/lib/fetchMarkdownFromS3';
+import { Locale } from '@/i18.config';
 import styles from './article.module.css';
 
-interface Post {
-    id: string;
-    title: string;
-    content: string;
-    slug?: string;
+interface ArticleProps {
+    params: {
+        lang: Locale;
+        slug: string;
+    };
 }
 
-const client = generateClient<Schema>();
+export default function Article({ params: { lang, slug } }: ArticleProps) {
+    const [markdownContent, setMarkdownContent] = useState('');
+    const [error, setError] = useState(null);
 
-async function fetchPosts(slug: string) {
-    const { data: posts } = await client.models.Posts.list();
-    return posts.filter((post: Post) => post.slug === slug);
-}
+    useEffect(() => {
+        const markdownUrl = `https://yohanaf-dev.s3.amazonaws.com/${slug}-${lang}.md`;
 
-export default async function ArticlePage({ params }: { params: { slug: string } }) {
-    const posts = await fetchPosts(params.slug);
+        fetchMarkdownFromS3(markdownUrl)
+            .then(content => setMarkdownContent(content))
+            .catch(err => setError(err));
+    }, [lang, slug]);
+
+    if (error) return <div>Error loading markdown content.</div>;
+    if (!markdownContent) {
+        return (
+            <div className={`loadingContainer`}>
+                <div className={`loadingSpinner`}></div>
+            </div>
+        );
+    }
+
     return (
-        <div className={styles.article}>
-            {posts.map((post: Post) => (
-                <div key={post.id}>
-                    <h1>{post.title}</h1>
-                    <Markdown>{post.content}</Markdown>
-                </div>
-            ))}
-        </div>
+        <main>
+            <article className={`${styles.article} markdownbody`}>
+                <Markdown children={markdownContent} />
+            </article>
+        </main>
     );
 }

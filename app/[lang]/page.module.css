@@ -8,6 +8,15 @@
     margin-top: 6em;
 }
 
+.hero h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    margin: 0;
+    padding: 0;
+}
+
 .heroImage {
     max-width: 100%;
     height: auto;
@@ -29,6 +38,10 @@
         typing 3.5s steps(30, end),
         blink .75s step-end 0s infinite,
         end 0s 6s forwards;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .textContainer {
@@ -64,6 +77,7 @@
     font-size: 1.5em;
     margin-bottom: .7em;
     text-align: center;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .techStack i {

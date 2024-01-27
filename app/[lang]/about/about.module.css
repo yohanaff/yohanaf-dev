@@ -8,19 +8,30 @@
     flex-wrap: wrap;
 }
 
-.aboutContainer h3 {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2em;
-    border: 1px solid #535353;
-    border-radius: 5px;
-    padding: 1em;
+.aboutContainer h1 {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    margin: 0;
+    padding: 0;
 }
 
 .aboutContainer h2 {
     margin-top: 2em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2em;
+    border: 1px solid #535353;
+    letter-spacing: .1rem;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.aboutContainer h3 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.2em;
     border: 1px solid #535353;
     border-radius: 5px;
