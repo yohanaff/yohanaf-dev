@@ -1,6 +1,6 @@
 .navbar {
     background-color: var(--navbar-bg-color);
-    color: var(--second-text-color);
+    color: var(--primary-text-color);
     position: fixed;
     height: 5em;
     display: flex;
@@ -52,7 +52,7 @@
     content: "";
     width: 0;
     height: 2px;
-    background: var(--second-text-color);
+    background: var(--primary-text-color);
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -85,7 +85,7 @@
 }
 
 .navbarLeftSide span {
-    color: var(--second-text-color);
+    color: var(--primary-text-color);
 }
 
 @media (max-width: 980px) {

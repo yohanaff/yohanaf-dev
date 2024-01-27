@@ -10,13 +10,13 @@ authenticated via an API key, can only "read" records.
 const schema = a.schema({
   Posts: a.model({
     imageUrl: a.string(),
-    title_en: a.string(),
-    title_pt: a.string(),
-    title_es: a.string(),
+    titleEn: a.string(),
+    titlePt: a.string(),
+    titleEs: a.string(),
     slug: a.string(),
-    content_en: a.string(),
-    content_pt: a.string(),
-    content_es: a.string(),
+    contentEn: a.string(),
+    contentPt: a.string(),
+    contentEs: a.string(),
     comments: a.hasMany('Comment')
   }).authorization([
     a.allow.public().to(['read']),
