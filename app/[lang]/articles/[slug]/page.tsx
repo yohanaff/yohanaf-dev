@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Markdown from 'react-markdown';
-import fetchMarkdownFromS3 from '@/lib/fetchMarkdownFromS3';
+import axios from 'axios';
 import { Locale } from '@/i18.config';
 import styles from './article.module.css';
 
@@ -20,8 +20,8 @@ export default function Article({ params: { lang, slug } }: ArticleProps) {
     useEffect(() => {
         const markdownUrl = `https://yohanaf-dev.s3.amazonaws.com/${slug}-${lang}.md`;
 
-        fetchMarkdownFromS3(markdownUrl)
-            .then(content => setMarkdownContent(content))
+        axios.get(markdownUrl)
+            .then(response => setMarkdownContent(response.data))
             .catch(err => setError(err));
     }, [lang, slug]);
 
