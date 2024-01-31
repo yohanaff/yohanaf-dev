@@ -11,6 +11,7 @@
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.2",
     "aws-amplify": "^6.0.13",
+    "dotenv": "^16.4.1",
     "i18next": "^23.7.16",
     "negotiator": "^0.6.3",
     "next": "^14.1.0",
@@ -20,15 +21,15 @@
     "react-markdown": "^9.0.1"
   },
   "devDependencies": {
-    "@aws-amplify/backend": "^0.10.2",
+    "@aws-amplify/backend": "^0.10.3",
     "@aws-amplify/backend-cli": "^0.9.7",
     "@types/negotiator": "^0.6.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-syntax-highlighter": "^15.5.11",
-    "aws-cdk": "^2.122.0",
-    "aws-cdk-lib": "^2.122.0",
+    "aws-cdk": "^2.124.0",
+    "aws-cdk-lib": "^2.124.0",
     "constructs": "^10.3.0",
     "daisyui": "^4.6.0",
     "typescript": "^5.3.3"

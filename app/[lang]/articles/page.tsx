@@ -25,14 +25,24 @@ async function fetchPosts() {
         return [];
     }
 
-    const { data: posts, errors } = await client.models.Posts.list({
-        authMode: 'apiKey',
-        headers: {
-            'Content-Type': 'application/json',
-            'x-api-key': apiKey
+    try {
+        const { data: posts, errors } = await client.models.Posts.list({
+            authMode: 'apiKey',
+            headers: {
+                'Content-Type': 'application/json',
+                'x-api-key': apiKey
+            }
+        });
+
+        if (errors) {
+            console.error('Errors fetching posts:', errors);
         }
-    });
-    return posts as Post[];
+
+        return posts as Post[];
+    } catch (error) {
+        console.error('Error in fetchPosts:', error);
+        return [];
+    }
 }
 
 export default async function Articles({
