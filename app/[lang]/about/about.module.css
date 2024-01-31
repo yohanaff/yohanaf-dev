@@ -7,10 +7,15 @@
     max-width: 80%;
 }
 
+.aboutContainer h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+}
+
 .aboutContainer h3 {
     margin-top: 2em;
     margin-bottom: 2em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.2em;
     border: 1px solid #535353;
     border-radius: 5px;
@@ -19,7 +24,7 @@
 
 .aboutContainer h2 {
     margin-top: 2em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.2em;
     border: 1px solid #535353;
     border-radius: 5px;
