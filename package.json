@@ -11,6 +11,7 @@
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.2",
     "aws-amplify": "^6.0.13",
+    "axios": "^1.6.7",
     "dotenv": "^16.4.1",
     "i18next": "^23.7.16",
     "negotiator": "^0.6.3",

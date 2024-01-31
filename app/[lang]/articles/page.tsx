@@ -1,9 +1,8 @@
-import { generateClient } from 'aws-amplify/data';
-import type { Schema } from '@/amplify/data/resource';
 import styles from './articles.module.css';
 import Link from 'next/link';
 import { Locale } from '@/i18.config';
 import Image from 'next/image';
+import axios from 'axios';
 
 interface Post {
     createdAt: string;
@@ -14,10 +13,6 @@ interface Post {
     titleEs: string;
 }
 
-const client = generateClient<Schema>({
-    authMode: 'apiKey'
-});
-
 async function fetchPosts() {
     const apiKey = process.env.NEXT_PUBLIC_API_KEY;
     if (!apiKey) {
@@ -25,22 +20,40 @@ async function fetchPosts() {
         return [];
     }
 
+    const query = `
+        query ListPosts {
+            listPosts {
+                items {
+                    createdAt
+                    imageUrl
+                    slug
+                    titleEn
+                    titlePt
+                    titleEs
+                }
+            }
+        }
+    `;
+
+    const endpoint = process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT;
+
     try {
-        const { data: posts, errors } = await client.models.Posts.list({
-            authMode: 'apiKey',
+        const response = await axios({
+            url: endpoint,
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'x-api-key': apiKey
-            }
+                'x-api-key': apiKey,
+            },
+            data: {
+                query,
+            },
         });
 
-        if (errors) {
-            console.error('Errors fetching posts:', errors);
-        }
-
-        return posts as Post[];
+        const posts = response.data.data.listPosts.items;
+        return posts;
     } catch (error) {
-        console.error('Error in fetchPosts:', error);
+        console.error('Error fetching posts:', error);
         return [];
     }
 }
