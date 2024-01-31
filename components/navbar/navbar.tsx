@@ -36,6 +36,11 @@ async function Navbar({ lang }: { lang: Locale }) {
                             {navigation.about}
                         </CustomLink>
                     </li>
+                    <li className={styles.navbarLinksList}>
+                        <CustomLink href='/articles' lang={lang}>
+                            {navigation.articles}
+                        </CustomLink>
+                    </li>
                     <div className={styles.themeToggleMobile}>
                         <ThemeToggle />
                     </div>

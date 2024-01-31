@@ -1,0 +1,15 @@
+.article {
+    margin: 6em auto;
+    max-width: 90vh;
+    padding: 4em 4em;
+    background-color: var(--card-bg-color);
+    border-radius: 5px;
+    box-shadow: 0 0 1px #ccc;
+}
+
+.createdAt {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--primary-text-color);
+}

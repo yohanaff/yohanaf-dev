@@ -1,7 +1,8 @@
 {
     "navigation": {
         "home": "Início",
-        "about": "Sobre"
+        "about": "Sobre",
+        "articles": "Artigos"
     },
     "page": {
         "home": {
