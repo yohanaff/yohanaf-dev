@@ -14,11 +14,25 @@ interface Post {
     titleEs: string;
 }
 
-const client = generateClient<Schema>();
+const client = generateClient<Schema>({
+    authMode: 'apiKey'
+});
 
 async function fetchPosts() {
-    const { data: posts, errors } = await client.models.Posts.list();
-    return posts;
+    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+    if (!apiKey) {
+        console.error("API key is missing");
+        return [];
+    }
+
+    const { data: posts, errors } = await client.models.Posts.list({
+        authMode: 'apiKey',
+        headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': apiKey
+        }
+    });
+    return posts as Post[];
 }
 
 export default async function Articles({
