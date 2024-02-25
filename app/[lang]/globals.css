@@ -151,6 +151,14 @@ body.dark h2 {
   color: #b9b9b9;
 }
 
+body.dark a {
+  color: #b9b9b9;
+}
+
+body.light a {
+  color: #161616;
+}
+
 ::-webkit-scrollbar {
   width: 1.3rem;
 }
