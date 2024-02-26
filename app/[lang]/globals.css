@@ -17,6 +17,7 @@ body.light {
   background-color: #f8f9fa;
   padding: 2em;
   color: #161616;
+  --border-photo-color: #bababa;
   --navbar-bg-color: #b9b9b9;
   --primary-text-color: #161616;
   --blink-color: #161616;
@@ -84,6 +85,7 @@ body.dark {
   background-color: #161616;
   padding: 2em;
   color: #fefefc;
+  --border-photo-color: #b9b9b9;
   --navbar-bg-color: #070707;
   --primary-text-color: #b9b9b9;
   --blink-color: #fefefc;
