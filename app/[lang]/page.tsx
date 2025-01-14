@@ -62,8 +62,6 @@ export default async function Home({
         </div>
         <div>
           <h3>// Front-End</h3>
-          <i className={`devicon-react-original-wordmark ${styles.devIcon}`}></i>
-          <i className={`devicon-nextjs-original-wordmark ${styles.devIcon}`}></i>
           <i className={`devicon-typescript-plain ${styles.devIcon}`}></i>
           <i className={`devicon-javascript-plain ${styles.devIcon}`}></i>
           <i className={`devicon-html5-plain-wordmark ${styles.devIcon}`}></i>
