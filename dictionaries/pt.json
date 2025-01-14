@@ -10,15 +10,13 @@
         },
         "about": {
             "title": "Sobre mim",
-            "subTitle": "🤖 Desenvolvedora Fullstack | Back-End | Especialista em Java & Spring Boot | JavaScript | Microsserviços | Experiência Multicultural em TI | Entusiasta de Tecnologias Emergentes",
+            "subTitle": "🤖 Engenheira de Software | Desenvolvedora | Backend | Especialista em Java & Spring Boot | Quarkus | Microsserviços | TypeScript | Experiência Multicultural em TI | Entusiasta de Tecnologias Emergentes",
             "description": "Desde 2021, venho trilhando um caminho empolgante no mundo da tecnologia da informação, especializando-me em desenvolvimento back-end com um foco robusto em Java e Spring Boot. Minha jornada profissional é marcada por experiências significativas em setores desafiadores, como o bancário/financeiro, onde tive a oportunidade de trabalhar com clientes de alto calibre e em equipes diversificadas que estendem-se por culturas e fronteiras (como o Chile e a Espanha).",
             "whatIDo": "💻 O que eu faço:",
             "whatIDoDescription": [
                 "- Desenvolvimento e manutenção de API's REST, microsserviços e batches",
                 "- Implementação de projetos utilizando metodologias ágeis como Scrum e Kanban.",
-                "- Criação de soluções eficientes utilizando Docker, Git, SQL, JUnit, Kafka, Splunk, AWS e Azure.",
-                "- Desenvolvimento de interfaces web responsivas e amigáveis ao usuário com HTML, CSS, JavaScript e TypeScript.",
-                "- Desenvolvimento de interfaces web interativas e dinâmicas com React."
+                "- Criação de soluções eficientes utilizando Docker, Git, SQL, JUnit, Kafka, Splunk, AWS e Azure."
             ],
             "languageSkillsTitle": "🌐 Habilidades Linguísticas:",
             "languageSkillsDescription": [
